@@ -3,11 +3,22 @@
     <script type="text/javascript">
         function msg(massage){ alert (massage);}
     </script>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 <title>my webpage</title>
 </head>
+<style>
+    body {background-color: black;}
+    p {color: gold;}
+    form {color: gold;}
+    .mybutn {color: green;}
+</style>
 <body>
 <h1 style="color:green">heading webpage</h1>
 <p>welcome to my code</p>
-<form><input type="button" value="click" onclick="msg('welcome to my code')"/></form>
+<button class="bg-green-900 hover:bg-green-600 text-white font-bold py-2 px-4 rounded mb-4 mt-4" onclick="msg('welcome to my code')">
+test </button>
+<form><input type="button" class="mybutn" value="click" onclick="msg('welcome to my code')"/></form>
+<p>Would you like to hear a joke? where do animals go when they lose their tails??</p>
+<form><input type="button" class="mybutn" value="answer" onclick="msg('the retail store lol')"/></form>
 </body>
 </html>
