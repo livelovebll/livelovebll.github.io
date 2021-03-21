@@ -1,0 +1,156 @@
+<html>
+<head>
+    <script type="text/javascript">
+        function msg(massage){ alert (massage);}
+    </script>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<div x-data="{stuff: [false, false, false]}">
+    <h1 style="color:red";>Before Engine Start</h1>   
+    <div x-show="!stuff[0]">
+        <input x-model="stuff[0]" type="checkbox">Pre-flight
+    </div>
+    
+    <div x-show="!stuff[1]">
+        <input x-model="stuff[1]" type="checkbox">Fuel Drain
+    </div>
+    
+    <div x-show="!stuff[2]">
+        <input x-model="stuff[2]" type="checkbox">Passenger
+    </div>
+<div x-show="!stuff[0]">
+        <input x-model="stuff[0]" type="checkbox">Seat
+    </div>
+    
+    <div x-show="!stuff[1]">
+        <input x-model="stuff[1]" type="checkbox">Seatbelts & Harness
+    </div>
+    
+    <div x-show="!stuff[2]">
+        <input x-model="stuff[2]" type="checkbox">Brakes
+    </div>
+<div x-show="!stuff[0]">
+        <input x-model="stuff[0]" type="checkbox">Avionics Master
+    </div>
+    
+    <div x-show="!stuff[1]">
+        <input x-model="stuff[1]" type="checkbox">Circuit Master
+    </div>
+    
+    <div x-show="!stuff[2]">
+        <input x-model="stuff[2]" type="checkbox">Fuel Selector
+    </div>
+<div x-show="!stuff[0]">
+        <input x-model="stuff[0]" type="checkbox">Beacon Light
+    </div>
+    <h1 style="color:red";>Engine Start</h1>
+    <div x-show="!stuff[1]">
+        <input x-model="stuff[1]" type="checkbox">Mixture
+    </div>
+    
+    <div x-show="!stuff[2]">
+        <input x-model="stuff[2]" type="checkbox">Carburetor Heat
+    </div>
+<div x-show="!stuff[0]">
+        <input x-model="stuff[0]" type="checkbox">Prime... 2-6 strokes if cold
+    </div>
+    
+    <div x-show="!stuff[1]">
+        <input x-model="stuff[1]" type="checkbox">Master
+    </div>
+    
+    <div x-show="!stuff[2]">
+        <input x-model="stuff[2]" type="checkbox">Throttle...Open 1/4 Inch
+    </div>
+<div x-show="!stuff[0]">
+        <input x-model="stuff[0]" type="checkbox">Propeller Area
+    </div>
+    
+    <div x-show="!stuff[1]">
+        <input x-model="stuff[1]" type="checkbox">Ignition
+    </div>
+    
+    <div x-show="!stuff[2]">
+        <input x-model="stuff[2]" type="checkbox">Engine RPM
+    </div>
+<div x-show="!stuff[0]">
+        <input x-model="stuff[0]" type="checkbox">Oil Pressure
+    </div>
+    <h1 style="color:red";>Before Taxi</h1>
+    <div x-show="!stuff[1]">
+        <input x-model="stuff[1]" type="checkbox">Flaps Up
+    </div>
+    
+    <div x-show="!stuff[2]">
+        <input x-model="stuff[2]" type="checkbox">Avionics Master... On
+    </div>
+<div x-show="!stuff[0]">
+        <input x-model="stuff[0]" type="checkbox">Nav Lights (Sunset-Sunrise) ON
+    </div>
+    
+    <div x-show="!stuff[1]">
+        <input x-model="stuff[1]" type="checkbox">Transponder... Select AlT For Taxi
+    </div>
+    
+    <div x-show="!stuff[2]">
+        <input x-model="stuff[2]" type="checkbox">ATIS... Listen & Copy
+    </div>
+<div x-show="!stuff[0]">
+        <input x-model="stuff[0]" type="checkbox">Brakes... Release & Test 
+    </div>
+    
+    <div x-show="!stuff[1]">
+        <input x-model="stuff[1]" type="checkbox">Communication... GRD or CTAF
+    </div>
+  <h1 style="color:red";>Before TakeOff(RunUp)</h1>
+    <div x-show="!stuff[2]">
+        <input x-model="stuff[2]" type="checkbox">Brakes... Set
+    </div>
+<div x-show="!stuff[0]">
+        <input x-model="stuff[0]" type="checkbox">Flight intrements... Set
+    </div>
+    
+    <div x-show="!stuff[1]">
+        <input x-model="stuff[1]" type="checkbox">Engine Instrements... On Green
+    </div>
+    
+    <div x-show="!stuff[2]">
+        <input x-model="stuff[2]" type="checkbox">Avionics... Properly Set For Light
+    </div>
+<div x-show="!stuff[0]">
+        <input x-model="stuff[0]" type="checkbox">Mixture... Below 3000
+    </div>
+    
+    <div x-show="!stuff[1]">
+        <input x-model="stuff[1]" type="checkbox">Throttle 1700RPM
+    </div>
+    
+    <div x-show="!stuff[2]">
+        <input x-model="stuff[2]" type="checkbox">Magnetos... Check Lt & Rt
+    </div>
+<div x-show="!stuff[0]">
+        <input x-model="stuff[0]" type="checkbox">Carburetor Heat... On,Check,Then Off
+    </div>
+    
+    <div x-show="!stuff[1]">
+        <input x-model="stuff[1]" type="checkbox">Engine Instrments... In Green
+    </div>
+    
+    <div x-show="!stuff[2]">
+        <input x-model="stuff[2]" type="checkbox">Ammeter... Check
+    </div>
+<div x-show="!stuff[0]">
+        <input x-model="stuff[0]" type="checkbox">Suction Gage... Green Arc 
+    </div>
+    
+    <div x-show="!stuff[1]">
+        <input x-model="stuff[1]" type="checkbox">Throttle... 800-1000 RPM
+    </div>
+    
+    <div x-show="!stuff[2]">
+        <input x-model="stuff[2]" type="checkbox">Throttle Friction Lock
+    </div>
+<div x-show="!stuff[0]">
+        <input x-model="stuff[0]" type="checkbox">Flight Controls
+    </div>
+</html>
