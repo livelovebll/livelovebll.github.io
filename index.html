@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My First Web Page</title>
+
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+        <script src="https://unpkg.com/alpinejs" defer></script>
+    </head>
+
+    <body x-data="{message: 'John Doe', open: false, showMessage: false }">
+        <img src="./img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
+
+        <div> 
+            <button class="bg-transparent hover:bg-blue-500 text-black font-semibold hover:text-black py-2 px-4 border border-blue hover:border-transparent rounded" x-on:click = "showMessage = ! showMessage">click here</button></div>
+        <div class='text-red-500 text-2xl' x-show = "showMessage" >This will show or go away whenever you want it too</div>
+  
+  <div>
+    <div>
+      What is Your Name?: <span x-text="message"></span>
+    </div>
+    
+    <input x-model="message" class="p-2 border">
+  </div>
+  <button x-on:click="open = ! open" class= "text-blue-500"> Login Options</button>
+  <ul x-show="open">
+    <li class= "text-red-500 hover:text-blue-500">Sign in?</li>
+    <li class= "text-red-500 hover:text-blue-500">Create Account</li>
+    <li class= "text-red-500 hover:text-blue-500">Forgot password</li>
+  </ul>
+  </body>
+</html>
